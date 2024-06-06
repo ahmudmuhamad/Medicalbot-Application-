@@ -5,7 +5,7 @@ const fs = require('fs');
 const router = express.Router() 
 const patientController = require('./../controllers/patientController');
 const authController = require('./../controllers/authController');
-const chatgpt = require('./../controllers/chatgpt');
+//const chatgpt = require('./../controllers/chatgpt');
 
 
 

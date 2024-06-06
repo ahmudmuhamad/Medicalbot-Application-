@@ -1,5 +1,6 @@
 const express = require('express');
 const app = express();
+const cors = require('cors'); // Import the CORS middleware
 const { dirname } = require('path');
 const morgan = require('morgan');
 const Patient = require('./models/patientModel');
@@ -7,6 +8,7 @@ const patientRouter = require('./routes/patientRoutes');
 const globalErrorHandler = require('./controllers/patientController');
 
 
+app.use(cors());
 
 if (process.env.NODE_ENV === 'development') {
     app.use(morgan('dev'));

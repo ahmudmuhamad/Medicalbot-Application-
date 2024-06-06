@@ -44,20 +44,25 @@ exports.login = async (req, res, next) => {
         // Check if the password is correct
         const passwordMatch = await bcrypt.compare(password, patient.password);
         if (!passwordMatch) {
-            return res.status(401).json({ status: 'success', message: 'Login successful', token });
+            return res.status(401).json({ message: 'Invalid email or password' });
         }
 
         // Generate JWT token
-        const token = jwt.sign({ patientId: patient._id }, process.env.JWT_SECERT, { expiresIn: process.env.JWT_EXPIRES_IN });
+        const token = jwt.sign({ patientId: patient._id }, process.env.JWT_SECRET, { expiresIn: process.env.JWT_EXPIRES_IN });
 
-        res.status(200).json({ 
+        // Send the token in the response
+        res.status(200).json({
             status: 'success',
-            message: 'Logged in Successfuly!',
-            token });
+            token: token, // Send the generated token
+            data: {
+                patient: patient
+            }
+        });
     } catch (err) {
         next(err);
     }
 };
+
 
 /*
 exports.protect = catchAsync(async(req,res,next) => {
