@@ -2,9 +2,9 @@
 
 ## Introduction
 
-The **Medical Chatbot Assistant** project aims to revolutionize healthcare accessibility and information dissemination within Arabic-speaking communities. This project addresses the challenges of limited access to healthcare professionals, language barriers, and unreliable online health information sources by developing a medical chatbot powered by real data sourced from healthcare professionals.
+The **Medical Chatbot Assistant** project aims to revolutionize healthcare accessibility and information dissemination within Arabic-speaking communities. This project addresses the challenges of limited access to healthcare professionals, language barriers, and unreliable online health information sources by developing a medical chatbot powered by real data from healthcare professionals.
 
-At its core, the project prioritizes accessibility and cultural sensitivity. The chatbot understands and responds in Arabic, ensuring that information is conveyed in a familiar way. By simply signing up and entering their symptoms, users can engage in a conversation that leads to a tailored list of potential causes and solutions for their ailments. While it’s important to emphasize that the chatbot cannot offer diagnoses or replace professional medical advice, it empowers users with knowledge and encourages them to seek appropriate healthcare when needed.
+At its core, the project prioritizes accessibility and cultural sensitivity. The chatbot understands and responds in Arabic, ensuring that information is conveyed familiarly. By simply signing up and entering their symptoms, users can engage in a conversation that leads to a tailored list of potential causes and solutions for their ailments. While it’s important to emphasize that the chatbot cannot offer diagnoses or replace professional medical advice, it empowers users with knowledge. It encourages them to seek appropriate healthcare when needed.
 
 This project tackles several challenges head-on:
 - It clearly communicates that the chatbot serves as an informative tool, not a substitute for medical expertise.
@@ -62,5 +62,5 @@ Feel free to review it for more detailed insights into the project and its contr
 
   
 
-## ف
+
   
